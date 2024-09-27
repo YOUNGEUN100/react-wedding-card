@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.61cc5b3b.css",
+    "main.js": "/static/js/main.de17ebd6.js",
+    "static/js/787.d00bc756.chunk.js": "/static/js/787.d00bc756.chunk.js",
+    "static/media/taeyeon_poem.mp3": "/static/media/taeyeon_poem.13d16db4a02836cf5d9d.mp3",
+    "static/media/부크크명조_얇은글씨.woff": "/static/media/부크크명조_얇은글씨.4dd24ae27c5fa573aaf0.woff",
+    "static/media/부크크명조_굵은글씨.woff": "/static/media/부크크명조_굵은글씨.e8da3dec364cd90e0d16.woff",
+    "static/media/photo.png": "/static/media/photo.d7e57a709cf047e53b8d.png",
+    "static/media/강원교육모두_Bold.woff": "/static/media/강원교육모두_Bold.8eaefb5b786b8cf34f6b.woff",
+    "static/media/강원교육모두_Light.woff": "/static/media/강원교육모두_Light.0199f2fa3d48c9d10dc8.woff",
+    "static/media/p5.png": "/static/media/p5.551a2fb3f9adb8180ea1.png",
+    "static/media/p3.png": "/static/media/p3.b868f564edaf5e98ac71.png",
+    "static/media/p4.png": "/static/media/p4.3a1c7e9237fb94b67476.png",
+    "static/media/p2.png": "/static/media/p2.31b1e18c6f26de5cd79c.png",
+    "static/media/p1.png": "/static/media/p1.0fcdf348c09cbf68941d.png",
+    "static/media/photobooth.jpg": "/static/media/photobooth.7159b69ca0119ee77be2.jpg",
+    "static/media/flower.png": "/static/media/flower.a5552bcf0b139bec2fbd.png",
+    "static/media/s5.png": "/static/media/s5.75f9b506c3c856ea8990.png",
+    "static/media/s3.png": "/static/media/s3.9ccd8297da40efd434e3.png",
+    "static/media/s4.png": "/static/media/s4.29c69ced9439e0fd9f43.png",
+    "static/media/s2.png": "/static/media/s2.16b823bbf809a6add392.png",
+    "static/media/s1.png": "/static/media/s1.7ffa9f05ab15c8c8c95e.png",
+    "static/media/naver.webp": "/static/media/naver.7717483eebafa7435918.webp",
+    "index.html": "/index.html",
+    "main.61cc5b3b.css.map": "/static/css/main.61cc5b3b.css.map",
+    "main.de17ebd6.js.map": "/static/js/main.de17ebd6.js.map",
+    "787.d00bc756.chunk.js.map": "/static/js/787.d00bc756.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.61cc5b3b.css",
+    "static/js/main.de17ebd6.js"
+  ]
+}
