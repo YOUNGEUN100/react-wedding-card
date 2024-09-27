@@ -4,6 +4,7 @@
 ## 페이지 구성
 <details>
   <summary>1. 커버</summary>
+  ![card_cover](https://github.com/user-attachments/assets/fde29201-b9ad-4aff-805f-dd5b7384ea3b)
   이 프로젝트는 사용자들이 간편하게 To-Do 리스트를 관리할 수 있는 웹 애플리케이션입니다.
   직관적인 UI와 백엔드 API를 통해, 사용자는 할 일을 추가하고, 삭제하고, 완료 상태를 변경할 수 있습니다.
 </details>
