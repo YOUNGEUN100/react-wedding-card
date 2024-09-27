@@ -11,7 +11,6 @@ import './css/Footer.css'
 import './css/SurveyModal.css'
 import './css/Submit.css'
 import './css/Comment.css'
-import './css/Information.css'
 import './css/Quiz.css'
 
 import Cover from './pages/Cover.js'
@@ -24,7 +23,6 @@ import Footer from './components/Footer.js';
 import SurveyModal from './components/SurveyModal.js';
 // import Submit from './pages/Submit.js';
 import Comment from './pages/Comment.js';
-import Information from './pages/Information.js';
 import Quiz from './pages/Quiz.js';
 
 
@@ -51,7 +49,6 @@ function App() {
       <ImgGallery />
       <Location />
       {/* <Submit openModal={openModal}/> */}
-      <Information />
       <Quiz/>
       <Contact />
       <Comment />
