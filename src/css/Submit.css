@@ -1,0 +1,34 @@
+.submit {
+    /* margin-top: 50px; */
+    border-radius: 5px;
+    /* border: 2px solid rgb(248, 153, 153); */
+    padding: 20px 0;
+}
+
+.submit__title {
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+
+.submit__text {
+    margin-bottom: 20px;
+}
+
+.submit__text div {
+    font-size: x-large;
+    margin-bottom: 5px;
+}
+
+.submit__btn {
+    font-family: 'GangwonEdu';
+    font-size: x-large;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 10px 0;
+    width: 300px;
+}
+
+.submit__btn:hover {
+    background-color: rgb(248, 153, 153);
+}

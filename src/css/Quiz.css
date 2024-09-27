@@ -1,0 +1,66 @@
+    .question-section, .score-section {
+    margin-top: 20px;
+  }
+  
+  .question-count {
+    margin-bottom: 20px;
+    font-size: large;
+  }
+
+  .question-text {
+    width: 340px;
+    font-size: x-large;
+  }
+
+  .answer-section {
+    margin-top: 10px;
+  }
+
+  .answer-button {
+    display: block;
+    width: 320px;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: large;
+    font-family: 'GangwonEdu';
+    cursor: pointer;
+    border: 2px solid transparent; /* Default no border color */
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .correct {
+    border-color: blue; /* Blue border for correct answers */
+  }
+  
+  .incorrect {
+    border-color: red; /* Red border for incorrect answers */
+  }
+
+  .my-score {
+    font-weight: bold;
+    font-size: x-large;
+  }
+  
+  .feedback {
+    width: 330px;
+    margin-top: 20px;
+    font-size: large;
+  }
+
+  .score-section {
+    width: 340px;
+    font-size: x-large;
+  }
+
+  .restart-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    font-size: large;
+    font-family: 'GangwonEdu';
+    cursor: pointer;
+    background-color: palevioletred; /* Green background for visibility */
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }

@@ -1,0 +1,55 @@
+ .location__details {
+    margin: 15px 0;
+    font-size: x-large;
+  }
+
+  .location__details div {
+    margin-bottom: 10px;
+  }
+
+  .location__map-icon-box {
+    padding: 5px 0;
+    margin-bottom: 20px;
+    width: 340px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(250, 227, 231);
+  }
+
+  .location__map-icon {
+    width: 30px;
+  }
+
+  .location__map-item:hover {
+    cursor: pointer;
+    background-color: rgb(247, 195, 204);
+  }
+
+ .location__map-item {
+  display: flex;
+  align-items: center;
+ } 
+
+ .location__map-item span {
+    margin-left: 10px;
+    font-size: large;
+ }
+
+  .location__map {
+    width: 340px;
+    height: 340px;
+  }
+
+  .location__info {
+    width: 300px;
+    text-align: left;
+    font-size: x-large;
+  }
+
+  .location__info div {
+    margin-bottom: 7px;
+  }
+
+  .bold {
+    font-weight: bold;
+  }

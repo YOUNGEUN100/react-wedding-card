@@ -1,0 +1,12 @@
+.footer {
+    height: 100px;
+    background-color: rgb(243, 180, 180);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.footer__text {
+    margin: 5px;
+}

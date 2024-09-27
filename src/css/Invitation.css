@@ -1,0 +1,46 @@
+
+  
+  .invitation__title {
+    font-size: xx-large;
+  }
+  
+ 
+  .invitation__content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .invitation__content div{
+    font-size: x-large;
+    margin-bottom: 10px;
+  }
+  
+  .invitation__family {
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+  }
+  
+  .invitaion__parent{
+    margin: 5px 10px;
+  }
+  
+  .invitation__child {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+
+  .invitation__btn-contact {
+    font-family: 'GangwonEdu';
+    font-size: x-large;
+    margin-top: 30px;
+    border: 1px solid rgb(134, 128, 128);
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 50px;
+  }
+
+  .invitation__btn-contact:hover {
+    background-color: rgb(243, 180, 180);
+  }
+  

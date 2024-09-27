@@ -1,0 +1,139 @@
+.modal__input-password {
+    padding: 5px 10px;
+    width: 250px;
+}
+
+.modal__delete {
+    padding: 15px 0;
+}
+
+.commment_content {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.commment_content input {
+    font-size: large;
+    font-family: 'GangwonEdu';
+    margin: 3px;
+    padding: 10px;
+    width: 145px;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.comment__line {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 2px;
+    width: 340px;
+    margin: 20px 0;
+}
+
+.comment__message {
+    margin-top: 5px;
+    padding: 10px;
+    width: 320px;
+    height: 60px;
+    font-family: 'GangwonEdu';
+    font-size: large;
+    border: 1px solid rgb(179, 172, 172);
+    border-radius: 5px;
+}
+
+.comment__btn {
+    font-size: medium;
+    margin-top: 10px;
+    background-color: rgb(246, 210, 216);
+    border: 1px solid rgb(246, 210, 216);
+    border-radius: 5px;
+    padding: 8px 0;
+    width: 340px;
+}
+
+.comment__btn:hover {
+    background-color: rgb(247, 193, 202);
+    border: 1px solid rgb(247, 193, 202);
+}
+
+.comment__container-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comment__data {
+    font-size: large;
+    background-color: white;
+    width: 310px;
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.comment__data-p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+.comment__data-pp {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.comment__data-com {
+    text-align: left;
+}
+
+.comment__date {
+    color: rgb(180, 175, 175);
+}
+
+.comment__btn-close {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(161, 158, 158);
+}
+
+.comment__btn-close:hover {
+    color: #f44336; 
+}
+
+.comment__password {
+    margin-top: 15px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+}
+
+.comment__password input {
+    padding: 10px;
+    margin-right: 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.comment__password button {
+    width:50px;
+    border-radius: 5px;
+    border: 1px solid rgb(194, 190, 190);
+}
+
+.comment__btn-more {
+    margin-top: 10px;
+    width: 340px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgb(204, 200, 200);
+    border-radius: 5px;
+}
+
+.comment__btn-more:hover {
+    background-color:rgb(204, 200, 200);
+}

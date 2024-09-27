@@ -1,0 +1,88 @@
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+ 
+  
+  .modal__content {
+    /* padding: 10px; */
+    background-color: #fefefe;
+    margin: 50% auto;
+    width: 350px;
+    /* height: 300px; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .modal__details {
+    width: 280px;
+    border: 1px solid rgb(95, 25, 25);
+    border-radius: 3px;
+    text-align: left;
+    margin: 20px;
+  }
+
+  .modal__details div {
+    padding: 10px 20px;
+    font-size: large;
+  }
+
+  .modal_line {
+    border-bottom: 1px solid rgb(95, 25, 25);
+  }
+
+
+  .modal_btn_close:hover,
+  .modal_btn_close:focus,
+  .modal__btn-copy:hover,
+  .modal__btn-copy:focus {
+    color: black;
+    text-decoration: none;
+  }
+
+  .modal__account {
+    padding-top: 20px;
+    font-weight: bold;
+    margin: 13px 0;
+    font-size: xx-large;
+  }
+
+  .modal__buttons {
+    width: 350px;
+  }
+
+  .modal__buttons button {
+    width: 175px;
+    border: none;
+    padding: 15px 0;
+    font-size: large;
+    font-family:'GangwonEdu';
+  }
+
+ 
+  .modal__btn-copy {
+    background-color:rgb(236, 199, 199);
+  }
+
+
+  .modal__pay-link {
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-weight: bold;
+    font-size: large;
+    background-color: yellow;
+    width: 230px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-bottom: 15px;
+  }

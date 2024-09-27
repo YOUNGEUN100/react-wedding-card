@@ -1,0 +1,87 @@
+.cover__main-photo {
+  width: 340px;
+  height: 340px;
+  margin-top: 15px;
+  border-radius: 10px;
+  object-fit: cover; /* 이미지가 컨테이너를 꽉 채우도록 설정 */
+}
+  
+  .cover__person {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bold;
+  }
+  
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .cover__icon-heart {
+    animation: heartbeat 1s infinite; 
+    margin: 0 15px;
+    color: rgb(214, 69, 69);
+  }
+  
+  .cover__date {
+    margin-top: 8px;
+    font-size: x-large;
+  }
+
+  .cover__place {
+    margin-top: 8px;
+    font-size: x-large;
+  }
+  
+  @keyframes playAnimation {
+    0% {
+      width: 0
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .cover__line {
+    border-radius: 2px;
+    margin-top: 30px;
+    width: 340px;
+    height: 4px;
+    background: linear-gradient(to right, rgb(170, 138, 138), rgb(170, 138, 138)); /* 시작 색상부터 끝 색상까지의 그라데이션 설정 */
+  }
+  
+  .cover__line::after {
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(95, 25, 25);;
+    animation: playAnimation 20s infinite; /* 애니메이션 지속 시간 및 무한 반복 설정 */
+  }
+  
+  .cover__icon-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+  }
+
+  .cover__music-btn:hover,
+  .cover__music-btn:focus {
+    cursor: pointer;
+    color:rgb(214, 69, 69);
+  }
+

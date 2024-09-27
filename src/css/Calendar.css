@@ -1,0 +1,80 @@
+
+  .calendar {
+    font-size: x-large;
+  }
+
+  .calendar__line {
+    width: 330px;
+    height: 1px;
+    background-color: rgb(192, 99, 99);
+  }
+  
+  .calendar__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .calendar__weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .calendar__weekdays span {
+    font-weight: bold;
+  }
+  
+  .calendar__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+  }
+  
+  .calendar__day {
+    padding: 9px;
+    text-align: center;
+    position: relative; /* 상대 위치 설정 */
+  }
+  
+  
+  .calendar__day.heart {
+    position: relative;
+    font-weight: bold;
+  }
+  
+  .calendar__day.heart::after {
+    content: '\2665'; /* 유니코드 하트 문자 */
+    font-size: 40px;
+    color: #ff56226c;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .blue {
+    color: blue;
+  }
+
+  .calendar__remain {
+    width: 300px;
+    margin: 20px 0;
+    border: 1px dotted rgb(95, 25, 25);
+    padding: 20px 15px;
+  }
+
+  .calendar__remain span {
+    margin-right: 10px;
+  }
+
+  .calendar__remain-day {
+    color: rgb(218, 82, 82);
+    font-weight: bold;
+  }

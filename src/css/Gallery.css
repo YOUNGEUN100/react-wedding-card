@@ -1,0 +1,13 @@
+.image-gallery {
+  width: 320px;
+}
+
+
+.image-gallery-fullscreen-button .image-gallery-svg, 
+.image-gallery-play-button .image-gallery-svg {
+  display: none;
+}
+
+.image-gallery-thumbnail-image {
+  /* display: none; */
+}

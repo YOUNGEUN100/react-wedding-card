@@ -1,0 +1,33 @@
+.App {
+  text-align: center;
+  
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.container {
+  margin: 0;
+  padding: 35px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flower {
+  width: 150px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bc-white {
+  background-color: white;
+}
+
+.bc-pink {
+  background-color: #fdf7f7;;
+}
