@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-wedding-card/static/css/main.ea9fd900.css",
-    "main.js": "/react-wedding-card/static/js/main.44c2d201.js",
+    "main.css": "/react-wedding-card/static/css/main.ab36cec1.css",
+    "main.js": "/react-wedding-card/static/js/main.f47d93c0.js",
     "static/js/787.d00bc756.chunk.js": "/react-wedding-card/static/js/787.d00bc756.chunk.js",
     "static/media/taeyeon_poem.mp3": "/react-wedding-card/static/media/taeyeon_poem.13d16db4a02836cf5d9d.mp3",
     "static/media/부크크명조_얇은글씨.woff": "/react-wedding-card/static/media/부크크명조_얇은글씨.4dd24ae27c5fa573aaf0.woff",
@@ -14,7 +14,6 @@
     "static/media/p4.png": "/react-wedding-card/static/media/p4.3a1c7e9237fb94b67476.png",
     "static/media/p2.png": "/react-wedding-card/static/media/p2.31b1e18c6f26de5cd79c.png",
     "static/media/p1.png": "/react-wedding-card/static/media/p1.0fcdf348c09cbf68941d.png",
-    "static/media/photobooth.jpg": "/react-wedding-card/static/media/photobooth.7159b69ca0119ee77be2.jpg",
     "static/media/flower.png": "/react-wedding-card/static/media/flower.a5552bcf0b139bec2fbd.png",
     "static/media/s5.png": "/react-wedding-card/static/media/s5.75f9b506c3c856ea8990.png",
     "static/media/s3.png": "/react-wedding-card/static/media/s3.9ccd8297da40efd434e3.png",
@@ -23,12 +22,12 @@
     "static/media/s1.png": "/react-wedding-card/static/media/s1.7ffa9f05ab15c8c8c95e.png",
     "static/media/naver.webp": "/react-wedding-card/static/media/naver.7717483eebafa7435918.webp",
     "index.html": "/react-wedding-card/index.html",
-    "main.ea9fd900.css.map": "/react-wedding-card/static/css/main.ea9fd900.css.map",
-    "main.44c2d201.js.map": "/react-wedding-card/static/js/main.44c2d201.js.map",
+    "main.ab36cec1.css.map": "/react-wedding-card/static/css/main.ab36cec1.css.map",
+    "main.f47d93c0.js.map": "/react-wedding-card/static/js/main.f47d93c0.js.map",
     "787.d00bc756.chunk.js.map": "/react-wedding-card/static/js/787.d00bc756.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea9fd900.css",
-    "static/js/main.44c2d201.js"
+    "static/css/main.ab36cec1.css",
+    "static/js/main.f47d93c0.js"
   ]
 }
