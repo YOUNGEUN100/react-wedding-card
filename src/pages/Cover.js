@@ -26,7 +26,7 @@ function Cover() {
   }, [isPlaying]);
 
   return (
-    <div className="bc-pink container">
+    <div className="container">
         <div className='title'>&ldquo;우리 결혼합니다&rdquo;</div>
         <img className="cover__main-photo" src={mainPhoto} alt='weddingcouple'></img>
         <div className='cover__person'>

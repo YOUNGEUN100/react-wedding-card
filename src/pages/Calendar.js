@@ -58,7 +58,7 @@ function Calendar() {
     }, []);
 
   return (
-    <div className='bc-pink container calendar'>
+    <div className='container calendar'>
       <img src={flower} className="flower" alt='flower'/>
       <h3>2025년 9월 6일 토요일 오후 1시</h3>
       <div className='calendar__line'></div>

@@ -32,7 +32,7 @@ function Location() {
   
 
   return (
-    <div className='container bc-pink'>
+    <div className='container'>
     <div className='title'>오시는 길</div>
     <div className='location__details'>
       <div>상록아트홀 그랜드볼룸홀</div>
