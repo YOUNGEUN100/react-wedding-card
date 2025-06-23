@@ -28,8 +28,7 @@ function Invitation() {
   return (
     <div className='bc-white container'>
       <div className='box__color'>
-        <img src={flower} className='flower' alt='flower'/>
-        <div className='invitation__title'>초대합니다</div>
+        <div className='invitation__title'>INVITATION</div>
         <div className='invitation__content'>
           <div>지금까지 소중한 인연을 지켜왔습니다.</div>
           <div>앞으로 남은 인생은 가족이 되어 </div>
@@ -38,12 +37,9 @@ function Invitation() {
           <div>두 사람의 새로운 시작을 </div>
           <div>함께 축복해주시면 감사하겠습니다. </div>
         </div>
-        <FamilyInfo dad="김아빠" mom="박엄마" child="김신랑" relation="의 차남" />
-        <FamilyInfo dad="이아빠" mom="우엄마" child="이신부" relation="의 장녀" />
-        <button className='invitation__btn-contact' onClick={openModal}>연락하기</button>
-        {isModalOpen && (
-          <ContactModal closeModal={closeModal}/>
-        )}
+        {/* <FamilyInfo dad="김아빠" mom="박엄마" child="이신랑" relation="의 장남" />
+        <FamilyInfo dad="이아빠" mom="우엄마" child="김신부" relation="의 차녀" /> */}
+       
       </div>
     </div>
   )

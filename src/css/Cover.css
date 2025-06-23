@@ -1,5 +1,5 @@
 .image-container {
-  width: 464px;         /* div 너비 */
+  width: 460px;         /* div 너비 */
   height: 800px;        /* div 높이 */
   overflow: hidden;     /* 넘치는 부분 잘라내기 */
   position: relative;   /* 자식 img 절대 위치 기준 */
@@ -28,21 +28,23 @@
 /* 위치별 텍스트 */
 .text-marry {
   top: 5%;
-  font-size: 25px;
+  font-size: x-large;
 }
 
 .text-name {
   top: 75%;
   transform: translateY(-50%);
-  font-size: 25px;
+  font-size: x-large;
 }
 
 .text-time {
   bottom: 16%;
+  font-size: large;
 }
 
 .text-location {
   bottom: 12%;
+  font-size: large;
 }
 
 
