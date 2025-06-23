@@ -107,7 +107,7 @@ function Comment() {
 
 
   return (
-    <div className='bc-pink container'>
+    <div className='bc-white container'>
         <div className='title'>방명록</div>
         <div className='commment_content'>
             <div>

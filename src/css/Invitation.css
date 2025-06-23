@@ -1,4 +1,7 @@
-
+.box__color {
+  background-color: blue;
+  padding: 20px 40px;
+}
   
   .invitation__title {
     font-size: xx-large;

@@ -26,7 +26,8 @@ function Invitation() {
     )
   }
   return (
-    <div className='bc-pink container'>
+    <div className='bc-white container'>
+      <div className='box__color'>
         <img src={flower} className='flower' alt='flower'/>
         <div className='invitation__title'>초대합니다</div>
         <div className='invitation__content'>
@@ -43,6 +44,7 @@ function Invitation() {
         {isModalOpen && (
           <ContactModal closeModal={closeModal}/>
         )}
+      </div>
     </div>
   )
 }

@@ -77,7 +77,7 @@ function Quiz() {
       };
 
   return (
-    <div className='container bc-pink'>
+    <div className='container bc-white'>
         <div className='title'>깜짝 퀴즈</div>
         {showScore ? (
         <div className='score-section'>
