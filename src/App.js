@@ -49,8 +49,8 @@ function App() {
       <ImgGallery />
       <Location />
       {/* <Submit openModal={openModal}/> */}
-      <Quiz/>
-      <Contact />
+   
+      {/* <Contact /> */}
       <Comment />
       <Footer />
     </div>

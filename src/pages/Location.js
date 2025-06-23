@@ -33,26 +33,28 @@ function Location() {
 
   return (
     <div className='container'>
-    <div className='title'>오시는 길</div>
-    <div className='location__details'>
-      <div>상록아트홀 그랜드볼룸홀</div>
-      <div>서울 강남구 언주로 508 상록회관 5층</div>
-    </div>
-    <div ref={mapRef} className='location__map'></div>
-    <div className='location__map-icon-box'>
-        <div className='location__map-item' onClick={gotoNavermap}>
-          <img src={naverMapIcon} className='location__map-icon' alt="naverMap"/>
-          <span>네이버지도</span>
+      <div className='box__location'>
+        <div className='loc__title'>LOCATION</div>
+        <div className='location__details'>
+          <div>상록아트홀 그랜드볼룸홀</div>
+          <div>서울 강남구 언주로 508 상록회관 5층</div>
         </div>
-        <div className='location__map-item' onClick={gotoKakaomap}>
-          <img src={kakaoMapIcon} className='location__map-icon' alt='kakaoMap'/>
-          <span>카카오지도</span>
+        <div ref={mapRef} className='location__map'></div>
+        <div className='location__map-icon-box'>
+            <div className='location__map-item' onClick={gotoNavermap}>
+              <img src={naverMapIcon} className='location__map-icon' alt="naverMap"/>
+              <span>네이버지도</span>
+            </div>
+            <div className='location__map-item' onClick={gotoKakaomap}>
+              <img src={kakaoMapIcon} className='location__map-icon' alt='kakaoMap'/>
+              <span>카카오지도</span>
+            </div>
         </div>
+        <div className='location__info'>
+          <div>선릉역 5번 출구에서 580m</div>
+        </div>
+      </div>
     </div>
-   <div className='location__info'>
-    <div>선릉역 5번 출구에서 580m</div>
-   </div>
-</div>
   )
 }
 
