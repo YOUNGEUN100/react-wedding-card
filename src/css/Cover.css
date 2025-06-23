@@ -28,7 +28,8 @@
 /* 위치별 텍스트 */
 .text-marry {
   top: 5%;
-  font-size: x-large;
+  font-size: xx-large;
+  font-family: 'Brush Script MT', cursive;
 }
 
 .text-name {
