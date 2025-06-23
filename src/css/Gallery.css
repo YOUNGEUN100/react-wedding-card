@@ -2,6 +2,11 @@
   width: 320px;
 }
 
+.gallery__title {
+  margin: 30px 0 20px 0;
+  font-weight: bold;
+}
+
 
 .image-gallery-fullscreen-button .image-gallery-svg, 
 .image-gallery-play-button .image-gallery-svg {

@@ -1,13 +1,17 @@
-
+.box__calendar {
+  width: 460px; 
+  background-color: rgba(248, 246, 246, 0.973);
+  padding: 30px 0;
+}
   .calendar {
-    font-size: x-large;
+    font-size: large;
   }
 
-  .calendar__line {
+  /* .calendar__line {
     width: 330px;
     height: 1px;
     background-color: rgb(192, 99, 99);
-  }
+  } */
   
   .calendar__body {
     display: flex;
@@ -19,7 +23,7 @@
   .calendar__weekdays {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    width: 350px;
+    width: 335px;
     margin-top: 20px;
     margin-bottom: 15px;
   }
@@ -47,7 +51,7 @@
   
   .calendar__day.heart::after {
     content: '\2665'; /* 유니코드 하트 문자 */
-    font-size: 40px;
+    font-size: 50px;
     color: #ff56226c;
     position: absolute;
     top: 50%;
@@ -63,7 +67,7 @@
     color: blue;
   }
 
-  .calendar__remain {
+  /* .calendar__remain {
     width: 300px;
     margin: 20px 0;
     border: 1px dotted rgb(95, 25, 25);
@@ -72,9 +76,13 @@
 
   .calendar__remain span {
     margin-right: 10px;
-  }
+  } */
 
+  .calendar__remain {
+    margin-top: 30px;
+  }
   .calendar__remain-day {
+    margin-top: 20px;
     color: rgb(218, 82, 82);
     font-weight: bold;
   }

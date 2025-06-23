@@ -3,7 +3,7 @@ import flower from '../images/flower.png'
 
 
 function CalendarDay({ day, isWeddingDay, isHoliday }) {
-  const dayOfWeekClass = day % 7 === 1 ? 'red' : day % 7 === 0 ? 'blue' : '';
+  const dayOfWeekClass = day % 7 === 3 ? 'red' : day % 7 === 2 ? 'blue' : '';
   const holidayClass = isHoliday ? 'red' : '';
   const specialDayClass = isWeddingDay ? 'heart red' : '';
 
@@ -16,8 +16,8 @@ function CalendarDay({ day, isWeddingDay, isHoliday }) {
 
 function Calendar() {
 
-    const daysInMonth = 30; // 2024년 9월은 30일까지
-    const firstDayOfWeek = 0; // 2024년 9월 1일은 일요일 (0부터 일요일, 1부터 월요일, ..., 6부터 토요일)
+    const daysInMonth = 31; // 2024년 9월은 30일까지
+    const firstDayOfWeek = 5; // 2024년 9월 1일은 일요일 (0부터 일요일, 1부터 월요일, ..., 6부터 토요일)
     const emptyDays = Array.from({ length: firstDayOfWeek }, () => null);
     const days = Array.from({ length: daysInMonth }, (_, index) => index + 1);
 
@@ -33,7 +33,7 @@ function Calendar() {
     useEffect(() => {
       const updateTimer = () => {
         const currentDate = new Date();
-        const targetDate = new Date('2025-09-06T13:00:00+0900');
+        const targetDate = new Date('2026-05-16T13:00:00+0900');
         const timeDiff = targetDate - currentDate;
   
         if (timeDiff > 0) {
@@ -59,31 +59,32 @@ function Calendar() {
 
   return (
     <div className='container calendar'>
-      <img src={flower} className="flower" alt='flower'/>
-      <h3>2025년 9월 6일 토요일 오후 1시</h3>
-      <div className='calendar__line'></div>
-      <div className="calendar__body">
-        <div className="calendar__weekdays">
-          {['일', '월', '화', '수', '목', '금', '토'].map((day) => (
-            <span key={day}>{day}</span>
-          ))}
+      <div className='box__calendar'>
+        <h3>5월</h3>
+        {/* <div className='calendar__line'></div> */}
+        <div className="calendar__body">
+          <div className="calendar__weekdays">
+            {['일', '월', '화', '수', '목', '금', '토'].map((day) => (
+              <span key={day}>{day}</span>
+            ))}
+          </div>
+          <div className="calendar__days">
+            {emptyDays.map((_, index) => (
+              <div key={`empty-${index}`}></div>
+            ))}
+            {days.map((day) => (
+              <CalendarDay key={day} day={day} isWeddingDay={day === 16} isHoliday={day === 5 || day === 25}/>
+            ))}
+          </div>
         </div>
-        <div className="calendar__days">
-          {emptyDays.map((_, index) => (
-            <div key={`empty-${index}`}></div>
-          ))}
-          {days.map((day) => (
-            <CalendarDay key={day} day={day} isWeddingDay={day === 7} isHoliday={day === 16 || day === 17 || day === 18}/>
-          ))}
-        </div>
+        {/* <div className='calendar__remain'>
+          <span>{timeLeft.days}일</span>
+          <span>{timeLeft.hours}시간</span>
+          <span>{timeLeft.minutes}분</span>
+          <span>{timeLeft.seconds}초</span>
+        </div> */}
+        <div className='calendar__remain'>신랑 & 신부의 결혼식 <span className='calendar__remain-day'>{timeLeft.days}일</span> 전</div>
       </div>
-      <div className='calendar__remain'>
-        <span>{timeLeft.days}일</span>
-        <span>{timeLeft.hours}시간</span>
-        <span>{timeLeft.minutes}분</span>
-        <span>{timeLeft.seconds}초</span>
-      </div>
-      <div>신랑♥신부의 결혼식 <span className='calendar__remain-day'>{timeLeft.days}일</span> 전</div>
     </div>
   )
 }

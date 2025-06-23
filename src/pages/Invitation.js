@@ -27,7 +27,7 @@ function Invitation() {
   }
   return (
     <div className='bc-white container'>
-      <div className='box__color'>
+      <div className='box__invite'>
         <div className='invitation__title'>INVITATION</div>
         <div className='invitation__content'>
           <div>지금까지 소중한 인연을 지켜왔습니다.</div>
