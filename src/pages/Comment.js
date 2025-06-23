@@ -108,7 +108,8 @@ function Comment() {
 
   return (
     <div className='bc-white container'>
-        <div className='title'>방명록</div>
+      <div className='box__comment'>
+        <div className='guestbook_title'>GUEST BOOK</div>
         <div className='commment_content'>
             <div>
                 <input 
@@ -173,6 +174,7 @@ function Comment() {
                     </button>
                 )}
         </div>
+      </div>
     </div>
   )
 }
