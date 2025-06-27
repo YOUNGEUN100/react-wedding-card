@@ -41,8 +41,11 @@ function ImgGallery() {
   
   return (
     <div className='bc-white container'>
-      <div className='gallery__title'>GALLERY</div>
-      <ImageGallery items={images} />
+      <div className='box__gallery'>
+        <div className='gallery__title'>GALLERY</div>
+        <ImageGallery items={images} />
+      </div>
+     
     </div>
   )
 }

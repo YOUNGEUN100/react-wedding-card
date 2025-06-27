@@ -3,6 +3,7 @@
   height: 800px;        /* div 높이 */
   overflow: hidden;     /* 넘치는 부분 잘라내기 */
   position: relative;   /* 자식 img 절대 위치 기준 */
+  font-weight: bold;
 }
 
 .cover__main-photo {
@@ -29,7 +30,8 @@
 .text-marry {
   top: 5%;
   font-size: xx-large;
-  font-family: 'Brush Script MT', cursive;
+  font-family: 'Italianno';
+  letter-spacing: 0.1em; 
 }
 
 .text-name {

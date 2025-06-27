@@ -1,8 +1,16 @@
 .box__calendar {
   width: 460px; 
-  background-color: rgba(248, 246, 246, 0.973);
+  background-color: rgba(246,247,249);
   padding: 30px 0;
 }
+
+@media (max-width: 400px) {
+  .box__calendar {
+    width: 100%;
+    padding: 0 16px;
+  }
+}
+
   .calendar {
     font-size: large;
   }
