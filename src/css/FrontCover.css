@@ -1,0 +1,12 @@
+
+.front-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 430px;         
+  height: 800px;       
+  font-family: 'Corinthia';
+}
+
+

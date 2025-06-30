@@ -1,6 +1,6 @@
 .footer {
     height: 100px;
-    background-color: rgba(240,242,245);
+    background-color: var(--color-bg-gray);
     display: flex;
     flex-direction: column;
     justify-content: center;

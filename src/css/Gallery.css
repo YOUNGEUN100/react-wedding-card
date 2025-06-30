@@ -5,8 +5,8 @@
 }
 
 .box__gallery {
-  width: 460px; 
-  background-color: rgba(251,251,252);
+  width: 100%; 
+  background-color:  var(--color-bg-lightgray);
   padding: 30px 0;
 }
 

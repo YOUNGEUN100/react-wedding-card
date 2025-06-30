@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import flower from '../images/flower.png'
 import ContactModal from '../components/ContactModal';
+
 
 function Invitation() {
 
@@ -30,6 +30,7 @@ function Invitation() {
       <div className='box__invite'>
         <div className='invitation__title'>INVITATION</div>
         <div className='invitation__content'>
+           
           <div>지금까지 소중한 인연을 지켜왔습니다.</div>
           <div>앞으로 남은 인생은 가족이 되어 </div>
           <div>같은 곳을 바라보며</div>

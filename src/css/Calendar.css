@@ -1,14 +1,7 @@
 .box__calendar {
-  width: 460px; 
-  background-color: rgba(246,247,249);
+  width: 100%; 
+  background-color: var(--color-bg-lightgray);
   padding: 30px 0;
-}
-
-@media (max-width: 400px) {
-  .box__calendar {
-    width: 100%;
-    padding: 0 16px;
-  }
 }
 
   .calendar {
@@ -58,11 +51,12 @@
   }
   
   .calendar__day.heart::after {
-    content: '\2665'; /* 유니코드 하트 문자 */
+    content: '\25CF'; 
+    /*  \2665 하트  \25CF 원 */
     font-size: 50px;
-    color: #ff56226c;
+    color:rgba(195, 186, 184, 0.42);
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -91,6 +85,5 @@
   }
   .calendar__remain-day {
     margin-top: 20px;
-    color: rgb(218, 82, 82);
     font-weight: bold;
   }
