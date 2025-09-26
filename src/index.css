@@ -81,3 +81,10 @@ code {
     font-weight: normal;
     font-style: normal;
   }
+
+  @font-face {
+    font-family: 'Allura';
+    src: url('fonts/Allura-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

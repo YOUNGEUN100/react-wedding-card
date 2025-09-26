@@ -43,7 +43,13 @@ function ImgGallery() {
     <div className='bc-white container'>
       <div className='box__gallery'>
         <div className='gallery__title'>GALLERY</div>
-        <ImageGallery items={images} />
+        <ImageGallery 
+            items={images} 
+            thumbnailPosition="bottom"  // bottom, top, left, right
+            showBullets='true'
+            showThumbnails='true'
+            showNav='false'
+        />
       </div>
      
     </div>

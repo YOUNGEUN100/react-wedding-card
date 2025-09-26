@@ -30,9 +30,9 @@ function Cover() {
       <div className='image-container'>
         <img className="cover__main-photo" src={mainPhoto} alt='weddingcouple'></img>
         <div class="cover__text text-marry"> We are getting married</div>
-        <div class="cover__text text-name">김 신 부  &nbsp; & &nbsp;  이 신 랑</div>
+        <div class="cover__text text-name">배 준 용  &nbsp; & &nbsp;  최 하 은</div>
         <div class="cover__text text-time">2026.05.16 SAT PM 01:00</div>
-        <div class="cover__text text-location">메종 드 프리미어 그랜드홀</div>
+        <div class="cover__text text-location">트라디노이</div>
       </div>
     </div>
   )

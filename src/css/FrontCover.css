@@ -1,12 +1,15 @@
 
 .front-box {
+  position: fixed;          /* 뷰포트 기준으로 정렬 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;       /* 내부 텍스트 중앙 정렬 */
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 400px;         
-  height: 500px;     
-  font-family: 'Corinthia';
+  justify-content: center; 
+  font-family: 'Allura';
 }
 
 
