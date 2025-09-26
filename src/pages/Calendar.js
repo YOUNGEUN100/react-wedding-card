@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import flower from '../images/flower.png'
 
 
 function CalendarDay({ day, isWeddingDay, isHoliday }) {

@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import ContactModal from '../components/ContactModal';
+import {useState} from 'react'
 
 
 function Invitation() {

@@ -1,8 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react'
 import mainPhoto from '../images/photo.jpg'
-import { TbPlayerTrackPrevFilled, TbPlayerSkipBackFilled, TbPlayerSkipForwardFilled, TbPlayerTrackNextFilled } from "react-icons/tb";
-import { BsPlayCircle, BsStopCircle } from "react-icons/bs";
-import { GoHeartFill } from "react-icons/go";
 import myMusic from '../media/taeyeon_poem.mp3';
 
 

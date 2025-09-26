@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { TypeAnimation } from 'react-type-animation';
 
 const FrontCover = () => {
