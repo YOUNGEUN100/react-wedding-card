@@ -16,8 +16,8 @@ function CalendarDay({ day, isWeddingDay, isHoliday }) {
 
 function Calendar() {
 
-    const daysInMonth = 30; // 2024년 9월은 30일까지
-    const firstDayOfWeek = 0; // 2024년 9월 1일은 일요일 (0부터 일요일, 1부터 월요일, ..., 6부터 토요일)
+    const daysInMonth = parseInt(process.env.REACT_APP_CALENDAR_DAYS_IN_MONTH); // 해당 월의 일수
+    const firstDayOfWeek = parseInt(process.env.REACT_APP_CALENDAR_FIRST_DAY_OF_WEEK); // 해당 월 1일의 요일 (0: 일요일, 1: 월요일, ..., 6: 토요일)
     const emptyDays = Array.from({ length: firstDayOfWeek }, () => null);
     const days = Array.from({ length: daysInMonth }, (_, index) => index + 1);
 
@@ -33,7 +33,7 @@ function Calendar() {
     useEffect(() => {
       const updateTimer = () => {
         const currentDate = new Date();
-        const targetDate = new Date('2025-09-06T13:00:00+0900');
+        const targetDate = new Date(process.env.REACT_APP_WEDDING_DATE);
         const timeDiff = targetDate - currentDate;
   
         if (timeDiff > 0) {
@@ -57,10 +57,13 @@ function Calendar() {
       return () => clearInterval(timer);
     }, []);
 
+  const weddingDay = parseInt(process.env.REACT_APP_CALENDAR_WEDDING_DAY);
+  const holidays = process.env.REACT_APP_CALENDAR_HOLIDAYS.split(',').map(d => parseInt(d));
+
   return (
     <div className='container calendar'>
       <img src={flower} className="flower" alt='flower'/>
-      <h3>2025년 9월 6일 토요일 오후 1시</h3>
+      <h3>{process.env.REACT_APP_WEDDING_DATE_DISPLAY}</h3>
       <div className='calendar__line'></div>
       <div className="calendar__body">
         <div className="calendar__weekdays">
@@ -73,7 +76,7 @@ function Calendar() {
             <div key={`empty-${index}`}></div>
           ))}
           {days.map((day) => (
-            <CalendarDay key={day} day={day} isWeddingDay={day === 7} isHoliday={day === 16 || day === 17 || day === 18}/>
+            <CalendarDay key={day} day={day} isWeddingDay={day === weddingDay} isHoliday={holidays.includes(day)}/>
           ))}
         </div>
       </div>

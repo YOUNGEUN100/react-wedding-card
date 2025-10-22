@@ -82,9 +82,70 @@ cd repository
 ```bash
 npm install
 ```
+
+### 환경변수 설정
+1. `.env.example` 파일을 복사하여 `.env` 파일을 생성합니다.
+```bash
+cp .env.example .env
+```
+
+2. `.env` 파일을 열어 본인의 정보로 수정합니다.
+
+#### Firebase 설정
+Firebase 프로젝트를 생성하고 Firestore 데이터베이스를 활성화한 후, Firebase 설정 정보를 입력합니다.
+```
+REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
+REACT_APP_FIREBASE_MEASUREMENT_ID=your_firebase_measurement_id
+```
+
+#### 결혼식 정보
+```
+REACT_APP_WEDDING_DATE=2025-09-07T13:00:00+0900
+REACT_APP_WEDDING_DATE_DISPLAY=2025년 9월 7일, 토요일 낮 1시
+```
+
+#### 신랑/신부 정보
+```
+REACT_APP_GROOM_NAME=김신랑
+REACT_APP_BRIDE_NAME=이신부
+```
+부모님 이름, 전화번호, 계좌번호 등도 `.env` 파일에서 수정할 수 있습니다.
+
+#### 예식장 정보
+```
+REACT_APP_VENUE_NAME=상록아트홀 그랜드볼룸홀
+REACT_APP_VENUE_ADDRESS=서울 강남구 언주로 508 상록회관 5층
+REACT_APP_VENUE_LATITUDE=37.504038
+REACT_APP_VENUE_LONGITUDE=127.042777
+```
+
+#### 지도 링크
+네이버 지도와 카카오 지도 링크를 설정합니다.
+```
+REACT_APP_NAVER_MAP_LINK=https://map.naver.com/p/search/상록아트홀
+REACT_APP_KAKAO_MAP_LINK=https://map.kakao.com/link/search/상록아트홀
+```
+
 ### 서버 실행
 ```bash
 npm start
+```
+
+### 배포
+GitHub Pages에 배포하려면:
+```bash
+npm run deploy
+```
+
+Firebase Hosting에 배포하려면:
+```bash
+npm run build
+firebase deploy
 ```
 
 

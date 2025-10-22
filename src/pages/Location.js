@@ -4,8 +4,8 @@ import kakaoMapIcon from '../images/kakao.png';
 
 function Location() {
   const mapRef = useRef(null);
-  const lat = 37.504038; // 위도
-  const lng = 127.042777; // 경도
+  const lat = parseFloat(process.env.REACT_APP_VENUE_LATITUDE); // 위도
+  const lng = parseFloat(process.env.REACT_APP_VENUE_LONGITUDE); // 경도
 
   useEffect(() => {
     const { naver } = window;
@@ -23,20 +23,20 @@ function Location() {
   }, []);
 
   const gotoNavermap = () => {
-    window.location.href = ''
+    window.location.href = process.env.REACT_APP_NAVER_MAP_LINK
   }
 
   const gotoKakaomap = () => {
-    window.location.href = ''
+    window.location.href = process.env.REACT_APP_KAKAO_MAP_LINK
   }
-  
+
 
   return (
     <div className='container'>
     <div className='title'>오시는 길</div>
     <div className='location__details'>
-      <div>상록아트홀 그랜드볼룸홀</div>
-      <div>서울 강남구 언주로 508 상록회관 5층</div>
+      <div>{process.env.REACT_APP_VENUE_NAME}</div>
+      <div>{process.env.REACT_APP_VENUE_ADDRESS}</div>
     </div>
     <div ref={mapRef} className='location__map'></div>
     <div className='location__map-icon-box'>
@@ -50,7 +50,7 @@ function Location() {
         </div>
     </div>
    <div className='location__info'>
-    <div>선릉역 5번 출구에서 580m</div>
+    <div>{process.env.REACT_APP_VENUE_TRANSPORT}</div>
    </div>
 </div>
   )

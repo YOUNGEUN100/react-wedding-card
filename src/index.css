@@ -25,12 +25,12 @@ code {
   src: url('fonts/강원교육모두_Light.woff') format('woff');
 }
 
-  @font-face {
-    font-family: 'BookkMyungjo-Bd';
-    src: url('fonts/부크크명조_굵은글씨.woff') format('woff');
-  }
+@font-face {
+  font-family: 'BookkMyungjo-Bd';
+  src: url('fonts/부크크명조_굵은글씨.woff') format('woff');
+}
 
-  @font-face {
-    font-family: 'BookkMyungjo';
-    src: url('fonts/부크크명조_얇은글씨.woff') format('woff');
-  }
+@font-face {
+  font-family: 'BookkMyungjo';
+  src: url('fonts/부크크명조_얇은글씨.woff') format('woff');
+}
