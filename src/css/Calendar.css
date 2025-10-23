@@ -1,80 +1,109 @@
-
-  .calendar {
+/* ------------------------------------------- */
+/* 캘린더 컨테이너 기본 스타일 */
+/* ------------------------------------------- */
+.calendar {
     font-size: x-large;
-  }
+    text-align: center; /* 전체 텍스트 중앙 정렬 */
+}
 
-  .calendar__line {
+.calendar__line {
     width: 330px;
     height: 1px;
     background-color: rgb(192, 99, 99);
-  }
-  
-  .calendar__body {
+    margin: 20px auto;
+}
+ 
+.calendar__body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+    /* max-width는 제거하거나, 아래 width와 동일하게 300px로 설정하는 것이 안전합니다. */
+    width: 300px; 
     margin: 0 auto;
-  }
-  .calendar__weekdays {
+}
+
+/* ------------------------------------------- */
+/* 1. 요일 헤더 (.calendar__weekdays) 수정 (정렬 핵심) */
+/* ------------------------------------------- */
+.calendar__weekdays {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    width: 350px;
+    /* 핵심 수정: 날짜 그리드와 동일하게 너비를 300px로 통일! */
+    width: 300px; 
     margin-top: 20px;
     margin-bottom: 15px;
-  }
-  .calendar__weekdays span {
+    gap: 10px; /* 원본에서 사용된 gap 유지 */
+}
+.calendar__weekdays span {
     font-weight: bold;
-  }
-  
-  .calendar__days {
+    text-align: center; 
+    padding: 9px; /* 날짜 칸과 동일하게 padding 부여 */
+}
+/* 요일 중 일요일, 토요일 색상 */
+.calendar__weekdays span:nth-child(1) { color: red; } /* 일요일 */
+.calendar__weekdays span:nth-child(7) { color: blue; } /* 토요일 */
+ 
+/* ------------------------------------------- */
+/* 2. 날짜 그리드 (.calendar__days) 수정 (정렬 핵심) */
+/* ------------------------------------------- */
+.calendar__days {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 10px;
-  }
-  
-  .calendar__day {
+    /* width를 명시적으로 300px로 설정하여 정렬 확립 */
+    width: 300px; 
+    gap: 10px; /* 요일 헤더와 동일하게 설정 */
+}
+ 
+/* 날짜 칸 기본 스타일 */
+.calendar__day {
     padding: 9px;
     text-align: center;
-    position: relative; /* 상대 위치 설정 */
-  }
-  
-  
-  .calendar__day.heart {
+    position: relative; 
+}
+
+/* ------------------------------------------- */
+/* 3. 6월 이월 날짜 색상 (Calendar.js에서 사용되는 클래스) */
+/* ------------------------------------------- */
+/* 이 부분은 Calendar.js의 6월 이월 로직에 필요하므로 유지합니다. */
+.calendar__day.prev-month {
+    color: #999; /* 연한 검정 */
+}
+.calendar__day.prev-sunday {
+    color: #e09090; /* 연한 빨강 */
+}
+
+/* ------------------------------------------- */
+/* 4. 기타 스타일 (원본 유지) */
+/* ------------------------------------------- */
+.calendar__day.heart {
     position: relative;
     font-weight: bold;
-  }
-  
-  .calendar__day.heart::after {
-    content: '\2665'; /* 유니코드 하트 문자 */
+}
+.calendar__day.heart::after {
+    content: '\2665';
     font-size: 40px;
     color: #ff56226c;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  .red {
+}
+.red {
     color: red;
-  }
-  
-  .blue {
+}
+.blue {
     color: blue;
-  }
-
-  .calendar__remain {
+}
+.calendar__remain {
     width: 300px;
-    margin: 20px 0;
+    margin: 20px auto;
     border: 1px dotted rgb(95, 25, 25);
     padding: 20px 15px;
-  }
-
-  .calendar__remain span {
+}
+.calendar__remain span {
     margin-right: 10px;
-  }
-
-  .calendar__remain-day {
+}
+.calendar__remain-day {
     color: rgb(218, 82, 82);
     font-weight: bold;
-  }
+}
