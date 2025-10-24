@@ -1,0 +1,176 @@
+# 환경변수 설정 가이드
+
+이 프로젝트는 환경변수를 활용하여 개인 정보를 안전하게 관리하고, 누구나 쉽게 자신만의 청첩장을 만들 수 있도록 설계되었습니다.
+
+## 빠른 시작
+
+### 1. 환경변수 파일 생성
+
+```bash
+cp .env.example .env
+```
+
+### 2. Firebase 프로젝트 설정
+
+1. [Firebase Console](https://console.firebase.google.com/)에서 새 프로젝트를 생성합니다.
+2. 웹 앱을 활성화합니다.
+3. 프로젝트 설정에서 Firebase 구성 정보를 복사합니다.
+4. `.env` 파일의 Firebase 섹션을 수정합니다:
+
+```env
+REACT_APP_FIREBASE_API_KEY=your_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id
+```
+
+### 3. 결혼식 정보 설정
+
+#### 날짜 및 시간
+```env
+REACT_APP_WEDDING_DATE=2025-09-07T13:00:00+0900
+REACT_APP_WEDDING_DATE_DISPLAY=2025년 9월 7일, 토요일 낮 1시
+```
+
+**중요**: `REACT_APP_WEDDING_DATE`는 ISO 8601 형식으로 작성해야 합니다.
+- 형식: `YYYY-MM-DDTHH:mm:ss+0900`
+- 예: 2025년 9월 7일 오후 1시 → `2025-09-07T13:00:00+0900`
+
+#### 신랑/신부 정보
+```env
+REACT_APP_GROOM_NAME=김신랑
+REACT_APP_GROOM_FATHER_NAME=김아빠
+REACT_APP_GROOM_MOTHER_NAME=박엄마
+REACT_APP_GROOM_RELATION=차남
+
+REACT_APP_BRIDE_NAME=이신부
+REACT_APP_BRIDE_FATHER_NAME=이아빠
+REACT_APP_BRIDE_MOTHER_NAME=우엄마
+REACT_APP_BRIDE_RELATION=장녀
+```
+
+#### 연락처 정보
+```env
+REACT_APP_GROOM_PHONE=01012345678
+REACT_APP_GROOM_FATHER_PHONE=01012345678
+REACT_APP_GROOM_MOTHER_PHONE=01012345678
+
+REACT_APP_BRIDE_PHONE=01012345678
+REACT_APP_BRIDE_FATHER_PHONE=01012345678
+REACT_APP_BRIDE_MOTHER_PHONE=01012345678
+```
+
+**주의**: 전화번호는 하이픈(-) 없이 숫자만 입력하세요.
+
+### 4. 예식장 정보 설정
+
+```env
+REACT_APP_VENUE_NAME=상록아트홀 그랜드볼룸홀
+REACT_APP_VENUE_ADDRESS=서울 강남구 언주로 508 상록회관 5층
+REACT_APP_VENUE_LATITUDE=37.504038
+REACT_APP_VENUE_LONGITUDE=127.042777
+REACT_APP_VENUE_TRANSPORT=선릉역 5번 출구에서 580m
+```
+
+#### 위도/경도 찾기
+1. [네이버 지도](https://map.naver.com) 또는 [구글 지도](https://maps.google.com)에서 예식장 검색
+2. 위치를 마우스 오른쪽 버튼으로 클릭
+3. 좌표 정보 복사
+
+### 5. 네이버 지도 API 설정
+
+네이버 지도를 사용하려면 네이버 클라우드 플랫폼에서 API 키를 발급받아야 합니다.
+
+#### 네이버 지도 API 클라이언트 ID 발급 방법
+1. [네이버 클라우드 플랫폼](https://www.ncloud.com/)에 로그인
+2. Console > Services > AI·NAVER API > Maps 선택
+3. Application 등록하기
+4. Web Dynamic Map 선택
+5. 애플리케이션 이름 입력 및 서비스 URL 등록
+6. 발급받은 **Client ID**를 복사
+
+```env
+REACT_APP_NAVER_MAP_CLIENT_ID=your_naver_map_client_id
+```
+
+### 6. 지도 링크 설정
+
+```env
+REACT_APP_NAVER_MAP_LINK=https://map.naver.com/p/search/상록아트홀
+REACT_APP_KAKAO_MAP_LINK=https://map.kakao.com/link/search/상록아트홀
+```
+
+네이버 지도와 카카오 지도에서 예식장을 검색한 후 URL을 복사하여 붙여넣으세요.
+
+### 7. 계좌 정보 설정
+
+```env
+# 신랑측
+REACT_APP_GROOM_ACCOUNT_BANK=우리은행
+REACT_APP_GROOM_ACCOUNT_NUMBER=1002-123-456789
+REACT_APP_GROOM_FATHER_ACCOUNT_BANK=우리은행
+REACT_APP_GROOM_FATHER_ACCOUNT_NUMBER=0123456789
+
+# 신부측
+REACT_APP_BRIDE_ACCOUNT_BANK=토스뱅크
+REACT_APP_BRIDE_ACCOUNT_NUMBER=1000-0123-4567
+```
+
+#### 카카오페이 송금 링크 (선택사항)
+```env
+REACT_APP_GROOM_KAKAOPAY=https://qr.kakaopay.com/your_link
+```
+
+카카오페이 송금 QR 코드를 생성한 후 링크를 입력할 수 있습니다.
+
+### 8. 달력 설정
+
+```env
+REACT_APP_CALENDAR_DAYS_IN_MONTH=30
+REACT_APP_CALENDAR_FIRST_DAY_OF_WEEK=0
+REACT_APP_CALENDAR_WEDDING_DAY=7
+REACT_APP_CALENDAR_HOLIDAYS=16,17,18
+```
+
+- `DAYS_IN_MONTH`: 결혼식이 있는 달의 총 일수 (28, 29, 30, 31)
+- `FIRST_DAY_OF_WEEK`: 그 달의 1일이 무슨 요일인지 (0: 일요일, 1: 월요일, ..., 6: 토요일)
+- `WEDDING_DAY`: 결혼식 날짜 (해당 월의 몇 일)
+- `HOLIDAYS`: 공휴일 (콤마로 구분, 예: 16,17,18)
+
+## 실행 및 배포
+
+## 보안 주의사항
+
+⚠️ **중요**: `.env` 파일은 절대 Git에 커밋하지 마세요!
+
+- `.env` 파일은 이미 `.gitignore`에 추가되어 있습니다.
+- Firebase API 키와 같은 민감한 정보가 포함되어 있습니다.
+- 배포 시에는 호스팅 플랫폼의 환경변수 설정 기능을 사용하세요.
+
+## 문제 해결
+
+### 환경변수가 적용되지 않을 때
+1. 개발 서버를 재시작하세요 (`Ctrl+C` 후 `npm start`)
+2. `.env` 파일이 프로젝트 루트 디렉토리에 있는지 확인하세요
+3. 환경변수 이름이 `REACT_APP_`로 시작하는지 확인하세요
+
+### 빌드 에러가 발생할 때
+1. `npm install`로 의존성이 제대로 설치되었는지 확인하세요
+2. Node.js 버전이 14 이상인지 확인하세요
+3. `.env` 파일의 문법이 올바른지 확인하세요 (등호 양쪽에 공백 없이)
+
+## 커스터마이징
+
+### 퀴즈 내용 변경
+퀴즈 내용은 `src/pages/Quiz.js` 파일의 `questions` 배열을 수정하세요.
+
+### 초대 문구 변경
+초대 문구는 `src/pages/Invitation.js` 파일의 `invitation__content` 섹션을 수정하세요.
+
+### 사진 변경
+- 커버 사진: `src/images/photo.png`
+- 갤러리 사진: `src/images/` 디렉토리의 이미지 파일들
+- 음악 파일: `src/media/taeyeon_poem.mp3`
