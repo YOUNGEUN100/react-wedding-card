@@ -152,5 +152,5 @@ REACT_APP_CALENDAR_HOLIDAYS=16,17,18
 
 ### 사진 변경
 - 커버 사진: `src/images/photo.png`
-- 갤러리 사진: `src/images/` 의 p~ , s~ 썸네일별로 이미지를 추가한 후 ImgGallery.js에 알맞는 이미지 수량을 itemCount 변수에 작성합니다.
+- 갤러리 사진: `src/images/` 의 p~ <원본이미지> , s~ <썸네일이미지> 제목별로 이미지를 추가한 후 ImgGallery.js에 알맞는 이미지 수량을 itemCount 변수에 작성합니다.
 - 음악 파일: `src/media/taeyeon_poem.mp3`
