@@ -82,9 +82,27 @@ cd repository
 ```bash
 npm install
 ```
+
+### 환경변수 설정
+1. `.env` 파일을 열어 본인의 정보로 수정합니다.
+
+[환경변수 설정 가이드](./SETUP_GUIDE.md) 를 참고하여 값을 수정합니다.
+
 ### 서버 실행
 ```bash
 npm start
+```
+
+### 배포
+GitHub Pages에 배포하려면:
+```bash
+npm run deploy
+```
+
+Firebase Hosting에 배포하려면:
+```bash
+npm run build
+firebase deploy
 ```
 
 
