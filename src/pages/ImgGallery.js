@@ -15,30 +15,16 @@ import s5 from '../images/s5.png';
 
 function ImgGallery() {
 
-  const images = [
-    {
-      original: p1,
-      thumbnail: s1,
-    },
-    {
-      original: p2,
-      thumbnail: s2,
-    },
-    {
-      original: p3,
-      thumbnail: s3,
-    },
-    {
-      original: p4,
-      thumbnail: s4,
-    },
-    {
-      original: p5,
-      thumbnail: s5,
-    },
-  ];
+  const imageCount = 5;
 
-  
+  const images = Array.from({ length: imageCount }, (_, i) => {
+    const num = i + 1;
+    return {
+      original: require(`../images/p${num}.png`),
+      thumbnail: require(`../images/s${num}.png`),
+    };
+  });
+
   return (
     <div className='bc-pink container'>
       <ImageGallery items={images} />
