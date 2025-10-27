@@ -4,13 +4,7 @@
 
 ## 빠른 시작
 
-### 1. 환경변수 파일 생성
-
-```bash
-cp .env.example .env
-```
-
-### 2. Firebase 프로젝트 설정
+### 1. Firebase 프로젝트 설정
 
 1. [Firebase Console](https://console.firebase.google.com/)에서 새 프로젝트를 생성합니다.
 2. 웹 앱을 활성화합니다.
@@ -27,7 +21,7 @@ REACT_APP_FIREBASE_APP_ID=your_app_id
 REACT_APP_FIREBASE_MEASUREMENT_ID=your_measurement_id
 ```
 
-### 3. 결혼식 정보 설정
+### 2. 결혼식 정보 설정
 
 #### 날짜 및 시간
 ```env
@@ -65,7 +59,7 @@ REACT_APP_BRIDE_MOTHER_PHONE=01012345678
 
 **주의**: 전화번호는 하이픈(-) 없이 숫자만 입력하세요.
 
-### 4. 예식장 정보 설정
+### 3. 예식장 정보 설정
 
 ```env
 REACT_APP_VENUE_NAME=상록아트홀 그랜드볼룸홀
@@ -80,7 +74,7 @@ REACT_APP_VENUE_TRANSPORT=선릉역 5번 출구에서 580m
 2. 위치를 마우스 오른쪽 버튼으로 클릭
 3. 좌표 정보 복사
 
-### 5. 네이버 지도 API 설정
+### 4. 네이버 지도 API 설정
 
 네이버 지도를 사용하려면 네이버 클라우드 플랫폼에서 API 키를 발급받아야 합니다.
 
@@ -96,7 +90,7 @@ REACT_APP_VENUE_TRANSPORT=선릉역 5번 출구에서 580m
 REACT_APP_NAVER_MAP_CLIENT_ID=your_naver_map_client_id
 ```
 
-### 6. 지도 링크 설정
+### 5. 지도 링크 설정
 
 ```env
 REACT_APP_NAVER_MAP_LINK=https://map.naver.com/p/search/상록아트홀
@@ -105,7 +99,7 @@ REACT_APP_KAKAO_MAP_LINK=https://map.kakao.com/link/search/상록아트홀
 
 네이버 지도와 카카오 지도에서 예식장을 검색한 후 URL을 복사하여 붙여넣으세요.
 
-### 7. 계좌 정보 설정
+### 6. 계좌 정보 설정
 
 ```env
 # 신랑측
@@ -126,7 +120,7 @@ REACT_APP_GROOM_KAKAOPAY=https://qr.kakaopay.com/your_link
 
 카카오페이 송금 QR 코드를 생성한 후 링크를 입력할 수 있습니다.
 
-### 8. 달력 설정
+### 7. 달력 설정
 
 ```env
 REACT_APP_CALENDAR_DAYS_IN_MONTH=30
@@ -144,23 +138,9 @@ REACT_APP_CALENDAR_HOLIDAYS=16,17,18
 
 ## 보안 주의사항
 
-⚠️ **중요**: `.env` 파일은 절대 Git에 커밋하지 마세요!
-
-- `.env` 파일은 이미 `.gitignore`에 추가되어 있습니다.
-- Firebase API 키와 같은 민감한 정보가 포함되어 있습니다.
-- 배포 시에는 호스팅 플랫폼의 환경변수 설정 기능을 사용하세요.
+- `.env` 파일은 `.gitignore`에 추가되어 있지 않지만, 보안을 위해 직접 추가한 후 호스팅 플랫폼별 환경변수 설정을 진행하는 것을 권장합니다.
 
 ## 문제 해결
-
-### 환경변수가 적용되지 않을 때
-1. 개발 서버를 재시작하세요 (`Ctrl+C` 후 `npm start`)
-2. `.env` 파일이 프로젝트 루트 디렉토리에 있는지 확인하세요
-3. 환경변수 이름이 `REACT_APP_`로 시작하는지 확인하세요
-
-### 빌드 에러가 발생할 때
-1. `npm install`로 의존성이 제대로 설치되었는지 확인하세요
-2. Node.js 버전이 14 이상인지 확인하세요
-3. `.env` 파일의 문법이 올바른지 확인하세요 (등호 양쪽에 공백 없이)
 
 ## 커스터마이징
 
