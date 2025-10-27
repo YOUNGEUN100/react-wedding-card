@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react'
 import flower from '../images/flower.png'
 
 
-function CalendarDay({ day, isWeddingDay, isHoliday }) {
-  const dayOfWeekClass = day % 7 === 1 ? 'red' : day % 7 === 0 ? 'blue' : '';
+function CalendarDay({ day, isWeddingDay, isHoliday, firstDayOfWeek }) {
+
+  const actualDayOfWeek = (day - 1 + firstDayOfWeek) % 7;
+  const dayOfWeekClass = actualDayOfWeek === 0 ? 'red' : actualDayOfWeek === 6 ? 'blue' : '';
   const holidayClass = isHoliday ? 'red' : '';
   const specialDayClass = isWeddingDay ? 'heart red' : '';
 
@@ -76,7 +78,7 @@ function Calendar() {
             <div key={`empty-${index}`}></div>
           ))}
           {days.map((day) => (
-            <CalendarDay key={day} day={day} isWeddingDay={day === weddingDay} isHoliday={holidays.includes(day)}/>
+            <CalendarDay key={day} day={day} isWeddingDay={day === weddingDay} isHoliday={holidays.includes(day)} firstDayOfWeek={firstDayOfWeek}/>
           ))}
         </div>
       </div>
